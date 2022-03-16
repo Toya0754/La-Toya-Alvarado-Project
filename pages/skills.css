@@ -1,5 +1,126 @@
 body {
     background-color: #8afbd4;
+    margin: 0;
+    font-family:fantasy;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: cursive;
+
+}
+h2 {
+    color:cyan;
+}
+h3 {
+    color:darkblue;
+}
+
+.header-wrapper {
+    height: 175px;
+    background-color: #53907b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+
+}
+
+.left-column {
+    display: flex;
+    align-items: left;
+
+}
+
+.header-styles {
+    font-family: 'Ubuntu Condensed' , sans-serif;
+    font-size: 1em;
+
+}
+
+.center-column {
+    margin-top: 0px;
+    width: 300px;
+}
+
+.time {
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #8afbd4;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+
+}
+
+.logo img {
+    width: 200px;
+    height: 100%;
+
+}
+
+.link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-link {
+    width: 70px;
+    text-align: center;
+    font-family: 'Ubuntu Condensed' , sans-serif;
+    color:#fff;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.nav-link:hover {
+    color: #bcca99;
+    letter-spacing: 2px;
+
+}
+
+.right-column {
+    display: flex;
+    align-items: right;
+
+}
+
+.icon {
+    font-size: 1em;
+
+}
+
+.icon-mr {
+    margin-right: 10px;
+   
+
+}
+
+.icon-ml {
+    margin-left: 10px;
+
+}
+
+.main-content {
+   margin-left: 30px;
+   
+}
 
 
+footer {
+    padding: 50px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #53907b;
+    height: 100px;
 }

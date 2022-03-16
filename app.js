@@ -7,8 +7,8 @@ const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 
 //counter
-let counter = 1;
-const size = carouselImages[3].clientWidth;
+let counter = 0;
+const size = carouselImages[4].clientWidth;
 
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
@@ -16,10 +16,11 @@ carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 //Button Listeners
 
 nextBtn.addEventListener('click', () => {
-    if (counter >= carouselImages.length - 1) return;
-    carouselSlide.style.transition = "transform 0.7s ease-in-out";
-    counter++;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    if (counter >= carouselImages.length - 1) return; {
+        carouselSlide.style.transition = "transform 0.7s ease-in-out";
+        counter++;
+        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    }
 });
 
 prevBtn.addEventListener('click', () => {
@@ -35,7 +36,6 @@ carouselSlide.addEventListener('transitionend', () => {
         carouselSlide.style.transition = "none";
         counter = carouselImages.length - 2;
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
     }
     if (carouselImages[counter].id === 'firstClone') {
         carouselSlide.style.transition = "none";
