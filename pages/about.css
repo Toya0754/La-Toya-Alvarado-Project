@@ -109,6 +109,7 @@ h2 {
 
 .main-content {
     padding: 30px;
+    column-count: 3;
 }
 
 footer {

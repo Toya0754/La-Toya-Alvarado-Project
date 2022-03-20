@@ -113,8 +113,23 @@ h3 {
 
 .main-content {
    margin-left: 30px;
+   height: 600px;
    
 }
+.column {
+    float: left;
+  }
+  
+  .left, .right, .middle {
+    width: 33.33%;
+  }
+  
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 
 footer {
